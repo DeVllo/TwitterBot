@@ -7,6 +7,7 @@ con los respectivos token, access token y secret key que brinda la red social a 
 El post se encuentra en desarrollo, al igual que la aplicación/bot. Se irán agregando nuevos updates.
 
 Por ahora cuenta con sólo 2 archivos de script:
+
 -> sendTweet.php
 Algoritmo que toma una frase de la base de datos enlazada y la twittea posterior al "fumo porro". Frase con la cual se identifica el bot.
 
