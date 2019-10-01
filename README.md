@@ -1,4 +1,5 @@
 # TwitterBot
+# devllo.github.io/TwitterBot/
 [ES] - Español:
 
 TwitterBot es un algoritmo creado en php y MySQL para la automatización de una cuenta de Twitter, simulando ser un bot. Trabaja como una App de twitter,
@@ -15,6 +16,6 @@ Algoritmo que toma una frase de la base de datos enlazada y la twittea posterior
 Algoritmo que toma los tweets más recientes que se incluyan en la búsqueda del hashtag "#fumoporro". Tiene diferentes 'filtraciones' para que éstos no contengan
 spam ni links/sitios maliciosos. Los agrega a una base de datos si es que la frase no existe. Y envía un mail con los respectivos informes.
 
-#TwitterBot
+# TwitterBot
 [EN] - English:
 #Working on it, keep calm. (:
