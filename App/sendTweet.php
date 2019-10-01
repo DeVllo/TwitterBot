@@ -1,6 +1,6 @@
 <?php
 // Create app and add keys from 
-include('config.php');
+include('configsql.php');
 $SESS1ON = $con->query("SELECT * FROM frases WHERE autorizada = 1 AND publicada = 0 LIMIT 1");
 $SESSION = $SESS1ON->fetch_row();
 
