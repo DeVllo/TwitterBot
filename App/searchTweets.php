@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once("twitteroauth.php"); //Path to twitteroauth library
-include('configsqli.php');
+include('configsql.php');
 
 $mysqli = new mysqli($servername,$username,$password,$database);
 $mysqli->query("SET NAMES 'utf8'");
