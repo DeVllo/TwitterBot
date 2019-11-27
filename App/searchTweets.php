@@ -13,7 +13,7 @@ else{
     printf("conexion con la DB exitosa uwu");
     echo("</br></br>");
 }
- 
+ //Palabras o keywords a buscar. Pueden ser hashtags o palabras simplemente.
 $search = "#fumoporrobot OR #fumoporro";
 $notweets = 100;
 /*  ======= ACÁ VAN SUS CREDENCIALES DE DEV.TWITTER.COM =======  */
@@ -54,7 +54,7 @@ foreach($twitts->statuses as $item)
         $originalstring = strtolower($item->text); //Pasamos a minúscula la frase
         $stringa = str_replace($aborrar, "", $item->text); //Borramos el $aborrar
         $stringo = str_replace("bot","",$stringa); //Por si quedó la palabra "bot" en la frase, se elimina.
-        $frasefinal = str_replace("fumo porro", "", $stringo); //La frase a salir, sin filtros aún.
+        $frasefinal = str_replace("palabraaeliminar", "", $stringo); //La frase a salir, sin filtros aún.
         
         $tweetID = (int)$item->id_str;
         
