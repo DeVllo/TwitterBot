@@ -16,7 +16,8 @@ require_once('twitteroauth.php');
     if($SESSION[2] == 1 && $SESSION[3] == 0){
         
         $tweet = new TwitterOAuth($consumerKey, $consumerSecret, $oAuthToken, $oAuthSecret);
-        $msg_base = "fumo porro";
+        
+        $msg_base = "Miro el techo y"; //Usen el mensaje que quieran como base.
         //$msg = $msg_base."veo cartoon network.";
         $msg = $msg_base.$SESSION['1'];
         if(strlen($msg) < 140) { 	
@@ -30,7 +31,7 @@ require_once('twitteroauth.php');
             }
             else
             {
-                echo('<p style="color:blue;"> no se hizo ni a palos</p>');
+                echo('<p style="color:blue;"> Error</p>');
             }
 
     echo('</br><center><h2>Se acaba de mandar el siguiente twitt: </h1></br></br><p style="red";>ID: </p><p>'.$SESSION[0].'</p></br>');
@@ -38,7 +39,7 @@ require_once('twitteroauth.php');
     echo('<p style="red";>Autorizada: </p><p>'.$SESSION[2].'</p></center></br>');
     }
     else{
-        echo('no se twitteo una mierda bro');
+        echo('Error al twittear la frase.');
     }
 //}
 
